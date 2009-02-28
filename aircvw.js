@@ -22,12 +22,13 @@ var Aircvw = {
     //
     matchedIdCache      : new Array(),
     matchedElementCache : new Array(),
-    parseTime     : 0,
-    renderingTime : 0,
+    parseTime           : 0,
+    renderingTime       : 0,
     highlightTimerId    : -1,
     highlightLineNumber : -1,
     searchMaxLineCount  : 1000,
-    
+    reverseTimeline     : true,
+
     /**
      * ログのテキストデータ
      */
@@ -36,7 +37,7 @@ var Aircvw = {
         this._logDataLines = null;
         this._logParsedData = null;
     },
-    
+
     /**
      * 行に分割されたテキストデータ
      */
@@ -60,7 +61,8 @@ var Aircvw = {
                 if (msg) { this._logParsedData.push(msg); }
             }
              this.parseTime = (new Date()) - startTime;
-             this._logParsedData = this._logParsedData.reverse();
+             if (this.reverseTimeline)
+                 this._logParsedData = this._logParsedData.reverse();
         }
         return this._logParsedData;
     },
@@ -213,7 +215,7 @@ function rerenderLogData() {
 
 function startSearch() {
     var keyword = Form.getInputs("ControlPanelForm", "text", "keyword")[0];
-    
+
     //alert(window.event.keyCode);
     // 上下キーで次のマッチへの処理
     if (window.event) {
