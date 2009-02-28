@@ -1,0 +1,32 @@
+00:07:13 topin -> topian
+00:33:54 topian -> topin
+00:47:09 <#てすと@Example:*.jp:makoto> てすとてすと
+00:47:24 <#てすと@Example:*.jp:makoto> これはテスト用のログです。
+00:47:35 <#てすと@Example:*.jp:makoto> ほげほげほげほげ
+01:27:16 <#てすと@Example:*.jp:Gaogao> http://www.google.co.jp/
+01:27:23 (#てすと@Example:*.jp:Gaogao) URLリンクキタコレ！
+01:27:24 (#てすと@Example:*.jp:Gaogao) noticeメッセージもキタコレ！
+01:31:57 <#てすと@Example:*.jp:makoto> なんでやねん！
+08:09:14 + ageha (ageha!~username@example.com) to #てすと@Example:*.jp
+08:19:18 <#てすと@IRCNet:*.jp:ageha> ノ
+08:19:21 ! ageha (EOF From client)
+08:19:39 + ageha (ageha!~username@example.co.jp) to #てすと@Example:*.jp
+08:22:45 ! ageha (EOF From client)
+08:30:29 topinaway -> topinwork
+10:15:08 makotoA -> makoto
+10:18:40 <#てすと@Example:*.jp:makoto> bu
+10:21:03 GaogaoWk -> Gaogao
+11:06:41 My nick is changed (mynick-a -> mynick-T)
+11:29:32 topin -> tpn
+11:29:43 + Gaogao (Gaogao!~gao@hogefuga.local) to #てすと@Example:*.jp
+11:29:47 <#てすと@Example:*.jp:Gaogao> hi pq
+11:29:50 Mode by topinwork: #てすと@Example:*.jp +o Gaogao
+11:34:23 >#てすと@Example:*.jp:mynick-T< Test メッセージ
+11:35:05 >#てすと@Example:*.jp:mynick-T< インクリメンタルサーチもできるはず。
+12:32:13 <#てすと@Example:*.jp:Gaogao> マッソー
+12:33:03 <#てすと@Example:*.jp:tpn> ちげーーーーーーーーーーーー
+12:39:32 My nick is changed (mynick-T -> mynick-a)
+13:50:22 <#てすと@Example:*.jp:tpn> ねるます
+13:50:23 <#てすと@Example:*.jp:tpn> ノシ
+13:51:05 tpn -> tpnSleep
+14:12:43 <#てすと@Example:*.jp:Gaogao> テラワロスｗｗｗｗっうぇｗｗｗ

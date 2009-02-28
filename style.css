@@ -1,0 +1,169 @@
+#ControlerContainer {
+	background:
+		#e6e6e6;
+	position:
+		fixed;
+	_position:
+		absolute;
+	left:
+		0px;
+	/* http://useyan.x0.com/s/html/expression/fixed.html */
+	top:
+		0;
+	_top: expression(document.documentElement && document.documentElement.scrollTop  || 
+		document.body && body.scrollTop  || 0
+		+ 0 + 'px');
+	width:
+		100%;
+	border-bottom:
+		1px solid #808080;
+	padding:
+		0;
+	margin:
+		0;
+	
+	filter:
+		alpha(opacity=85, style=0);
+	opacity:
+		0.85;
+	z-index:
+		2;
+}
+#ControlerContainer ul#searchResult {
+	display:
+		none;
+	padding:
+		0;
+	margin:
+		0;
+	height:
+		10em;
+	overflow:
+		auto;
+}
+
+#ControlerContainer ul#searchResult a:link,
+#ControlerContainer ul#searchResult a:visited {
+	text-decoration:
+		none;
+	color:
+		darkblue;
+}
+
+
+#ControlerContainer p {
+	padding:
+		0;
+	margin:
+		0;
+}
+#ControlerContainer p#ControlerContainerSwitch a:link,
+#ControlerContainer p#ControlerContainerSwitch a:visited {
+	padding:
+		0.2em;
+	margin:
+		0;
+	color:
+		white;
+	background:
+		#002856;
+	display:
+		block;
+}
+
+form#ControlPanelForm {
+	font-size:
+		80%;
+	display:
+		none;
+	padding:
+		0;
+	margin:
+		0 1em 1em 1em;
+}
+
+fieldset {
+	border:
+		1px solid #808080;
+	padding:
+		0.3em;
+}
+
+body {
+	margin:
+		0;
+	padding:
+		0;
+	filter:
+		expression('');
+	font-family:
+		'Lucida Sans Unicode', 'Arial', sans-serif;
+	font-size:
+		90%;
+	line-height:
+		1.2;
+	background:
+		white;
+	color:
+		#202020;
+}
+
+#result {
+	padding:
+		1em 1em 1em 2em;
+	border:
+		1px solid #c0c0c0;
+	width:
+		90%;
+}
+
+#content {
+	z-index:
+		1;
+	position:
+		absolute;
+	top:
+		2em;
+	margin:
+		0 2em 2em 2em;
+	_margin-top:
+		2em;
+}
+
+.msg-join,
+.msg-quit,
+.msg-part{
+	color:
+		#c0c0c0;
+}
+
+.msg-mode,
+.msg-nick {
+	color:
+		#96c79a;
+}
+
+.msg-notice {
+	color:
+		darkgreen;
+}
+.matched {
+	background:
+		#ffeaf2;
+}
+
+a:link {
+	color:
+		darkblue;
+}
+
+address {
+	font-size:
+		90%;
+	color:
+		#c0c0c0;
+	font-style:
+		normal;
+}
+
+

@@ -1,0 +1,61 @@
+<!--
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN">
+-->
+<html>
+	
+<head>
+<title>aircvw: init</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="prototype-1.4.0.js"></script>
+<script type="text/javascript" src="aircvw.js?200801020114" charset="UTF-8"></script>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</style>
+</head>
+
+<body onload="main()">
+<div id="ControlerContainer">
+	<p id="ControlerContainerSwitch"><a href="javascript:optionExpand();">検索と表示のオプション &raquo;</a></p>
+	<form id="ControlPanelForm" name="ControlPanelForm" onsubmit="startSearch(); return false;">
+		<fieldset>
+			<legend>ページ内移動</legend>
+			<p><a href="#head">一番上へ</a> | <a href="#bottom">一番下へ</a></p>
+		</fieldset>
+		<fieldset>
+			<legend>無視するメッセージ</legend>
+			<input type="checkbox" onclick="rerenderLogData()" id="ignorePrivmsg" name="ignorePrivmsg" /><label for="ignorePrivmsg">Privmsg</label>
+			<input type="checkbox" onclick="rerenderLogData()" id="ignoreNotice" name="ignoreNotice" /><label for="ignoreNotice">Notice</label>
+			<input type="checkbox" onclick="rerenderLogData()" id="ignoreNick" name="ignoreNick" /><label for="ignoreNick">Nick</label>
+			<input type="checkbox" onclick="rerenderLogData()" id="ignoreJoin" name="ignoreJoin" /><label for="ignoreJoin">Join</label>
+			<input type="checkbox" onclick="rerenderLogData()" id="ignorePart" name="ignorePart" /><label for="ignorePart">Part</label>
+			<input type="checkbox" onclick="rerenderLogData()" id="ignoreQuit" name="ignoreQuit" /><label for="ignoreQuit">Quit</label>
+			<input type="checkbox" onclick="rerenderLogData()" id="ignoreMode" name="ignoreMode" /><label for="ignoreMode">Mode</label>
+			<input type="checkbox" onclick="rerenderLogData()" id="ignoreUnknown" name="ignoreUnknown" /><label for="ignoreUnknown">Unknown</label>
+			<!--input type="checkbox" onclick="rerenderLogData()" id="ignore" name="ignore" /><label for="ignore">Notice</label-->
+		</fieldset>
+		<fieldset>
+			<legend>検索</legend>
+				<p><label for="keyword">検索文字列: </label><input type="textbox" id="keyword" name="keyword" onkeyup="startSearch();" size="110" title="上下キーで次の検索結果へ移動します。" /></p>
+				<input type="checkbox" id="useRegex" name="useRegex" onclick="renderLogSearchResult()" checked="checked" /><label for="useRegex">正規表現を使用する</label>
+				<input type="checkbox" id="caseInsensitive" name="caseInsensitive" onclick="renderLogSearchResult()" checked="checked" /><label for="caseInsensitive">大文字小文字を無視する</label>
+				<input type="checkbox" id="useInclemental" name="useInclemental" onclick="setUseInclemental()" checked="checked" /><label for="useInclemental">入力中に検索</label>
+		</fieldset>
+	</form>
+
+	<ul id="searchResult">
+	</ul>
+
+</div>
+
+
+<div id="content">
+	<h1 id="head">aircvw: uninitialized.</h1>
+	<p><a id="prev" href="#" onclick="prev(); return false;">Prev</a> | <a id="next" href="#" onclick="next(); return false;">Next</a></p>
+	<ul id="result">
+		<li>uninitialized</li>
+	</ul>
+	<address id="bottom">$Id: view.html 23 2009-02-28 07:13:04Z mayuki $</address>
+</div>
+
+
+</body>
+</html>
